@@ -155,6 +155,16 @@ docs/
 只有配置、脚本和文档。**不含**：任何人的图片、音频、日记、记忆、聊天记录、账号、密钥、服务器地址。
 凭据一律写成 `<PLACEHOLDER>`，路径一律写成变量。可以放心直接分享。
 
+## 相关仓库
+
+这套配置里用到的三个本地插件，源码也开放了：
+
+| 仓库 | 是什么 |
+| --- | --- |
+| [qq-mode-console](https://github.com/raging007/qq-mode-console) | DSH 设置页里的 QQ 桥接模式控制台 |
+| [qq-agent-presets](https://github.com/raging007/qq-agent-presets) | QQ 桥接用的 agent 预设（qq-chat / qq-chat-v2）+ 工具守卫 |
+| [memory-nebula](https://github.com/raging007/memory-nebula) | 跨设备记忆星图（包名 `dsh-memory-nebula`） |
+
 ## 版权与致谢
 
 - 配置与脚本部分：MIT
