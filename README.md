@@ -39,6 +39,30 @@ DSH（DeepSeek Harness）本身只是引擎，插件装上去以后长成什么�
 - **QQ 原生通道**：它可以从 QQ 私聊里跟你说话（需要 SnowLuma 做网关）
 - **语音与生图**：能说话、能画图（需要 qq-voice-suite 和云端 key）
 
+## 一键部署（懒人版）
+
+不想一条条复制命令的，直接用脚本：
+
+```powershell
+# 只想看看它会做什么，不写任何文件
+powershell -ExecutionPolicy Bypass -File scripts\install.ps1 -DryRun
+
+# 装核心集
+powershell -ExecutionPolicy Bypass -File scripts\install.ps1
+
+# 核心集 + QQ 通道（会问你要 QQ 号、令牌、SnowLuma 目录）
+powershell -ExecutionPolicy Bypass -File scripts\install.ps1 -WithQQ
+
+# 核心集 + 语音生图
+powershell -ExecutionPolicy Bypass -File scripts\install.ps1 -WithVoice
+```
+
+脚本做的事：查 Node 版本 → 找/建 profile 目录 → **备份**原来的 `package.json` 和 `cordis.patch.yml` → 写入核心配置 → 按开关叠加可选段 → `pnpm install`。
+
+- 改写前一定会备份，文件名带时间戳，出问题直接改回来
+- 加 `-DryRun` 就只体检不写字
+- 装完要**完全退出 DSH 再打开**
+
 ## 快速开始
 
 ### 第一步：体检
