@@ -1,0 +1,18 @@
+# ─────────────────────────────────────────────────────────────
+# 可选段 ①：QQ 原生通道（需要先装好 SnowLuma 并登录小号）
+# 用法：把下面整段（从这个 - id 开始）贴到 cordis.patch.yml 的末尾
+# 贴之前把 <...> 换成你自己的值
+# ─────────────────────────────────────────────────────────────
+- id: dsh-world
+  name: dsh-world
+  config:
+    qqNative:
+      enabled: true
+      wsUrl: 'ws://127.0.0.1:3001'          # 与 SnowLuma 的 WS 端口一致
+      accessToken: '<ACCESS_TOKEN>'          # 必须和 SnowLuma 的令牌一模一样
+      allowPrivate:
+        - '<OWNER_QQ>'                       # 只允许这个号私聊，别人发的不理
+      ownerQQ: '<OWNER_QQ>'
+      bindHomeSession: owner                 # 私聊绑到 home 会话
+      snowlumaHome: '<SNOWLUMA_HOME>'        # SnowLuma 安装目录
+      supervise: true                        # 桥掉了自动重拉

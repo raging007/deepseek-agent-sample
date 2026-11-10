@@ -1,0 +1,15 @@
+# ─────────────────────────────────────────────────────────────
+# 可选段 ②：语音 / 生图 MCP（需要先部署 qq-voice-suite）
+# 没有它也能正常聊天，只是发不了语音、看不到图
+# 用法：整段贴到 cordis.patch.yml 末尾，替换掉路径里的 <...>
+# ─────────────────────────────────────────────────────────────
+- insert:
+    - id: mcp-qq-voice
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: qqvoice
+        transport: stdio
+        command: '<DSH_HOME>\dsh-runtimes\dsh-primary-runtime\dependencies\node\bin\node.exe'
+        args:
+          - '<WORK_ROOT>\qq-voice-suite\server\mcp-qq-voice.js'
+        toolCallTimeoutMs: 120000

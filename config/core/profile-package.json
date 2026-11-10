@@ -1,0 +1,37 @@
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dshmarket",
+        "@michengai/dsh-archive-manager",
+        "@linxin666/dsh-client-ui-git-graph",
+        "dsh-world",
+        "dsh-pet",
+        "dsh-mnemon",
+        "dsh-ops",
+        "dsh-computer-use-win",
+        "dsh-config-manager",
+        "@momasiku/dsh-pilot"
+      ]
+    }
+  },
+  "dependencies": {
+    "@linxin666/dsh-client-ui-git-graph": "0.4.14",
+    "@michengai/dsh-archive-manager": "1.2.8",
+    "@momasiku/dsh-pilot": "0.7.2",
+    "dsh-computer-use-win": "0.5.5",
+    "dsh-config-manager": "0.6.0",
+    "dsh-mnemon": "0.5.42",
+    "dsh-ops": "0.5.2",
+    "dsh-pet": "^0.4.5",
+    "dsh-world": "^0.7.3",
+    "dshmarket": "^1.73.14"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

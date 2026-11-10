@@ -1,0 +1,7 @@
+{
+  "workspaceId": "",
+  "prefix": "<VOICE_PREFIX>",
+  "rate": 1,
+  "pitch": 1,
+  "targetModel": "cosyvoice-v3.5-plus"
+}

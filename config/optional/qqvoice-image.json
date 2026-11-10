@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "visionModel": "qwen3-vl-plus",
+  "genModel": "qwen-image-2.1-pro",
+  "visionCooldownMs": 600000,
+  "visionDailyLimit": 12,
+  "genCooldownMs": 1800000,
+  "genDailyLimit": 2
+}

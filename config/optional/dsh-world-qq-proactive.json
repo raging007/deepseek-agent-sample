@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "checkIntervalMinMs": 1800000,
+  "checkIntervalMaxMs": 5400000,
+  "idleThresholdMs": 900000,
+  "probability": 0.3,
+  "prompt": "【示例提示词】此刻有点想找对方说话，就只写要发出去的那句话，不要写旁白或计划；不想打扰就只回 [SILENT]。"
+}

@@ -1,0 +1,14 @@
+node_modules/
+*.log
+*.zip
+.env
+.env.*
+.DS_Store
+Thumbs.db
+state/
+cache/
+sessions/
+*.mp3
+*.wav
+*.png
+*.jpg

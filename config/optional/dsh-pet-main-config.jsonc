@@ -1,0 +1,19 @@
+{
+  "pets": [
+    {
+      "id": "main",
+      "name": "我的宠物",
+      "size": 462,
+      "balanceEnabled": true,
+      "whisperEnabled": true,
+      "workStatusEnabled": true,
+      "fixedEnabled": false,
+      "display": "desktop",
+      "position": {
+        "corner": "top-right",
+        "marginX": 24,
+        "marginY": 100
+      }
+    }
+  ]
+}
